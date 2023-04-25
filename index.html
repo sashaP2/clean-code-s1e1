@@ -6,34 +6,41 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="page">
-    <header class="aaa">
-      <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <header class="header">
+      <img class="header__img"
+           src="./eisenhower-matrix.jpg"
+           alt="eisenhower-matrix">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
-    <main class="centered-main-page-element">
+    <main class="main">
       <section>
         <label class="new-task__label" for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task" class="input section-add__input" type="text">
+        <div class="new-task__wrapper">
+          <input id="new-task"
+                 class="input new-task__input"
+                 type="text">
           <button class="button">Add</button>
         </div>
       </section>
       <section>
         <h3 class="section__title">Todo</h3>
-        <ul class="section__list list" id="incompleteTasks">
+        <ul class="section__list list" id="incomplete-tasks">
           <li class="section__item">
             <input class="input checkbox-type__input __input" type="checkbox">
             <label class="label __label todo__label">Pay Bills</label>
-            <input type="text" class="input text-type__input __input">
+            <input type="text"
+                   class="input text-type__input __input">
             <button class="button edit item__button">Edit</button>
             <button class="button delete item__button">
               <img class="button__img" src="./remove.svg" alt="remove">
             </button>
           </li>
-          <li class="section__item editMode">
+          <li class="section__item edit__mode">
             <input class="input checkbox-type__input __input" type="checkbox">
             <label class="label __label todo__label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="input text-type__input __input">
+            <input type="text"
+                   value="Go Shopping"
+                   class="input text-type__input __input">
             <button class="button edit item__button">Save</button>
             <button class="button delete item__button">
               <img class="button__img" src="./remove.svg" alt="remove">
@@ -45,7 +52,9 @@
         <h3 class="section__title">Completed</h3>
         <ul class="section__list list" id="completed-tasks">
           <li class="section__item">
-            <input class="input checkbox-type__input __input" type="checkbox" checked>
+            <input class="input checkbox-type__input __input"
+                   type="checkbox"
+                   checked>
             <label class="label __label">See the Doctor</label>
             <input type="text" class="input text-type__input __input">
             <button class="button edit item__button">Edit</button>

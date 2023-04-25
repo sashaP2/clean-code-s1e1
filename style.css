@@ -5,7 +5,7 @@
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -16,19 +16,19 @@
   width: 100%;
 }
 
-.aaa .more_inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .aaa {
+  .header {
     text-align: center;
   }
 
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -36,13 +36,13 @@
 
 .__label,
 .text-type__input,
-.section-add__input {
+.new-task__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .text-type__input,
-.section-add__input {
+.new-task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -124,7 +124,7 @@
   align-items: center;
 }
 
-.section__item > * {
+.section__item {
   vertical-align: middle;
 }
 
@@ -139,7 +139,7 @@
   width: 226px;
 }
 
-.section__item > .text-type__input {
+.text-type__input {
   width: 226px;
 }
 
@@ -164,11 +164,11 @@
   display: none;
 }
 
-.editMode .text-type__input {
+.edit__mode .text-type__input {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .__label {
+.edit__mode .__label {
   display: none;
 }
